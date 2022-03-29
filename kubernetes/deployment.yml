@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: docker.io/joysarkar81/webapp:v1
+        image: docker.io/joysarkar81/webapp:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
