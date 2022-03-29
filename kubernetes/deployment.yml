@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: 404622708094.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
+        image: docker.io/webapp:latest
         ports:
         - containerPort: 5000
