@@ -6,7 +6,7 @@ RUN pip install -r requirements.txt
 
 COPY src src
 
-EXPOSE 5001
+EXPOSE 5000
 
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=5 \
     CMD curl -f http://localhost:5001/health || exit 1
