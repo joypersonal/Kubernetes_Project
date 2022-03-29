@@ -18,4 +18,4 @@ spec:
       - name: webapp
         image: joysarkar81/webapp:latest
         ports:
-        - containerPort: 5001
+        - containerPort: 5003
