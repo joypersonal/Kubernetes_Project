@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: joysarkar81/webapp:latest
+        image: joysarkar81/webapp:v1
         ports:
         - containerPort: 5001
