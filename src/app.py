@@ -31,4 +31,8 @@ def details():
     return render_template('index.html', HOSTNAME=hostname)
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(host='0.0.0.0', port=5003)
+=======
+    app.run(host='0.0.0.0', port=5000)
+>>>>>>> 98b878bf1bb9c8750e8e183260fb23eaec3867a1
