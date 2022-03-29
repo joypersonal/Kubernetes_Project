@@ -1,27 +1,34 @@
 from flask import Flask, jsonify, render_template
-import socket
+#import socket
 
 app = Flask(__name__)
 
 def fetchDetails():
-    hostname =socket.gethostname()
-    ip = socket.gethostbyname(hostname)
-    return str(hostname), str(ip)
+    hostname = "Ecosia"
+#    hostname =socket.gethostname()
+#    ip = socket.gethostbyname(hostname)
+    return str(hostname)
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def Ecosia_GreenTrees():
+    return "<p>Welcome to Ecosia, GreenTrees!</p>"
 
 @app.route("/health")
 def health():
     return jsonify(
         status="UP"
     )
+    
+@app.route("/tree")
+def tree():
+    return jsonify(
+        favourite_tree="MANGO"
+    )
 
 @app.route("/details")
 def details():
-    hostname, ip = fetchDetails()
-    return render_template('index.html', HOSTNAME=hostname, IP=ip)
+    hostname = fetchDetails()
+    return render_template('index.html', HOSTNAME=hostname)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
