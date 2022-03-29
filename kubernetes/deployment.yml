@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-webapp
+  name: webapp
   labels:
-    app: web
+    app: webapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: web
+      app: webapp
   template:
     metadata:
       labels:
-        app: web
+        app: webapp
     spec:
       containers:
       - name: webapp
