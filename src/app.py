@@ -12,7 +12,7 @@ def fetchDetails():
 @app.route("/")
 def Ecosia_GreenTrees():
     print("Ecosia_GreenTrees")
-    return "<p>Welcome to my world1, GreenTrees!</p>"
+    return "<p>Welcome to my worldfffff1, GreenTrees!</p>"
 
 @app.route("/health")
 def health():
