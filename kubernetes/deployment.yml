@@ -18,8 +18,4 @@ spec:
       - name: webapp
         image: joysarkar81/webapp:v1
         ports:
-<<<<<<< HEAD
         - containerPort: 5003
-=======
-        - containerPort: 5000
->>>>>>> 98b878bf1bb9c8750e8e183260fb23eaec3867a1
