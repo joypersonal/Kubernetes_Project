@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: docker.io/webapp:latest
+        image: joysarkar81/webapp:latest
         ports:
         - containerPort: 5000
